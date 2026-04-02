@@ -30,4 +30,4 @@ O site foi desenvolvido com foco em:
 
 ---
 
-💡 Projeto desenvolvido para fins de estudo e portfólio.
+💡 Projeto em desenvolvimento para fins de estudo e portfólio.
