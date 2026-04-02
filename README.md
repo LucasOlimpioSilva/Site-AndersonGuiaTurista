@@ -4,7 +4,7 @@ Landing page desenvolvida para um guia turístico no Rio de Janeiro, com o objet
 
 ## 📸 Preview
 
-
+https://site-andersonguiaturista.vercel.app/
 
 ## 🚀 Tecnologias utilizadas
 
