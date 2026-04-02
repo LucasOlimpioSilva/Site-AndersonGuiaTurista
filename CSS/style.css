@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "open sans", sans-serif;
+    background-color: #f8f8f8;
+}
+
+.main {
+    margin-top: 5rem;
+}
+
+h1{
+    font-size: 56px;
+    font-family: "cardo", serif;
+}
+
+.main h2{
+    font-size: 18.8px;
+    font-weight: 400;
+    margin:2em 0;
+    padding: 0 15% 0 15%;
+
+}
+
+h1, h2{
+    text-align: center;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;  
+}
+
+.links li{
+    padding: .5rem 1rem .5rem 1rem;
+    background-color: #f5e6ce;
+    border-radius: .7rem;
+    text-align: center;
+    width: 200px;
+}
+
+.links a{
+    text-decoration: none;
+    color: #1F3C4D;
+    font-weight: 600;
+}
+
+section.guide-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3rem 0;
+    background-color: #f5e6ce;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.guide-info {
+    width:70%;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+
+.guide-info h2{
+    font-family: "cardo", serif;
+    font-size: 56px;
+    margin: 0 0 1rem 0;
+}
+
+.guide-info span{
+    color: #F4A261;
+}
+
+.guide-image{
+    width: 25%;;
+}
+
+.guide-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.tours-section{
+    margin-bottom: 3rem;
+}
+
+.tours-section img {
+    width: 100%;
+    border-radius: 2rem;
+}
