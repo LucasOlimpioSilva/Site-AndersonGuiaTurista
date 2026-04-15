@@ -18,58 +18,72 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body class="body"'>
-    <main class="main container-fluid p-5">
-        <h1 class=' main-text-color'>
-        Exemplo
+<body class="body">
+
+    <main class="main container-fluid p-2">
+        <h1 class='main-text-color'>
+        Seu Guia Completo no Rio de Janeiro
         <!--Explore o Rio de Janeiro com um Guia de Turismo Local-->
         </h1>
         <h2 class='main-text-color'>
             Tours personalizados, segurança e os melhores pontos turísticos do RJ com quem conhece de verdade.
         </h2>
-        <div class="container ">
+        <div class="container">
             <ol class="links">
                 <li>
-                    <a href="http://">Passeios</a>
+                    <a href="http://">Agendar Passeio</a>
                 </li>
                 <li>
                     <a href="http://">Entre em contato</a>
                 </li>
-                <li>
-                    <a href="http://">Galeria</a>
-                </li>
             </ol>
         </div>
     </main>
+
     <section class="tours-section container-fluid ">
-        <div class="container-fluid container-carosel p-0">
-            <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./images/Tour1.jpg" class="d-block" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/Tour2.jpg" class="d-block" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/Tour3.jpg" class="d-block" alt="...">
-                    </div>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/Tour1.jpg" class="d-block" alt="...">
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="carousel-item">
+                    <img src="./images/Tour2.jpg" class="d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/Tour3.jpg" class="d-block" alt="...">
+                </div>
             </div>
-        </section>
-    </div>
-    <div class='container-fluid container-guide-section'>
-        <section class="guide-section">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="container-galery-section container-fluid ">
+        <h2>Viva o Rio de Janeiro</h2>
+        <p>Veja alguns dos lugares incríveis que você pode conhecer com nossos passeios guiados.</p>
+        <div class="galery-section">
+                <img src="./images/Galery1.jpg" alt="Foto de um ponto turístico do Rio de Janeiro">
+                <img src="./images/Galery1.jpg" alt="Foto de um ponto turístico do Rio de Janeiro">
+                <img src="./images/Galery1.jpg" alt="Foto de um ponto turístico do Rio de Janeiro">
+                <img src="./images/Galery1.jpg" alt="Foto de um ponto turístico do Rio de Janeiro">
+                <img src="./images/Galery1.jpg" alt="Foto de um ponto turístico do Rio de Janeiro">
+                <img src="./images/Galery1.jpg" alt="Foto de um ponto turístico do Rio de Janeiro">
+                <img src="./images/Galery1.jpg" alt="Foto de um ponto turístico do Rio de Janeiro">
+                <img src="./images/Galery1.jpg" alt="Foto de um ponto turístico do Rio de Janeiro">
+                <img id="galery-image-9" src="./images/Galery1.jpg" alt="Foto de um ponto turístico do Rio de Janeiro">
+        </div>
+    </section>
+    
+    <section class="container-guide-section">
+        <div class='container-fluid guide-section'>
             <div class="guide-info">
                 <h2 class='main-text-color'>
                     Conheça seu guia
@@ -93,11 +107,9 @@
             <div class="guide-image">
                 <img src="./images/Vanderson.png" alt="Foto do guia de turismo local">
             </div>
-        </section>
-        <section class="galery">
-
-        </section>
-    </div>
+        </div>
+    </section>
+    
 </body>
 
 </html>
