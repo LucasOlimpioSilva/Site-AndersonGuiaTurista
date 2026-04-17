@@ -11,7 +11,7 @@ Landing page desenvolvida para um guia turístico no Rio de Janeiro, com o objet
 - HTML5
 - CSS3
 - JavaScript
-- (Adicione aqui se usar: Bootstrap, Tailwind, etc)
+- Bootstrap
 
 ## 🎯 Funcionalidades
 
@@ -26,7 +26,7 @@ Landing page desenvolvida para um guia turístico no Rio de Janeiro, com o objet
 O site foi desenvolvido com foco em:
 - Experiência do usuário (UX)
 - Design moderno e limpo
-- Conversão (geração de leads)
+- Conversão
 
 ---
 
