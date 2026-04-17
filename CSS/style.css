@@ -10,10 +10,6 @@ body.body {
     justify-content: center;
     align-items: center;
     font-family: "open sans", sans-serif;
-    /*
-    background: #020024;
-    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 31%, rgba(0, 108, 130, 1) 67%); 
-  */
 }
 
 .main {
@@ -22,19 +18,9 @@ body.body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-    /*
-    background-image: url(../images/Tour3.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 30rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    */
 }
+
+
 
 .main h1 {
     font-size: 56px;
@@ -52,6 +38,10 @@ body.body {
 .main-text-color {
     text-align: center;
     color: #000;
+}
+
+img {
+    border-radius: 15px;
 }
 
 .links {
@@ -87,8 +77,8 @@ body.body {
 }
 
 section.tours-section {
-    margin-top: 2rem;
-    padding: 0 5%;
+    margin: 3rem 0;
+    
 }
 
 .container-carosel{
@@ -110,7 +100,6 @@ section.tours-section {
 
 section.container-galery-section {
     margin: 3rem 0;
-    padding: 0 5%;
 }
 
 section.container-galery-section h2 {
@@ -129,7 +118,7 @@ section.container-galery-section p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 2rem 2rem;
+    gap: 20px;
 }
 
 .galery-section img {
@@ -146,11 +135,7 @@ section.container-galery-section p {
 }
 
 section.container-guide-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     margin: 3rem 0;
-    padding: 0 5%;
 }
 
 .guide-section {
@@ -167,15 +152,20 @@ section.container-guide-section {
     flex-direction: column;
     gap: 2rem;
     text-align: center;
+    background-color: #4c75b3;
+    border-radius: 15px;
+    padding: 1rem;
+    color: #fff;
 }
 
 .guide-info h2 {
     font-size: 56px;
     margin: 0 0 1rem 0;
+    color: #fff;
 }
 
 .guide-info span {
-    color: #090979;
+    color: #fff;
 }
 
 .guide-image {
@@ -186,6 +176,30 @@ section.container-guide-section {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+section.container-map-section {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+section.container-map-section h2 {
+    font-size: 56px;
+    margin-bottom: 2rem;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+section.tours-section,
+section.container-carosel,
+section.container-galery-section,
+section.container-guide-section,
+section.container-map-section {
+    padding: 0 17%;
 }
 
 @media (max-width: 992px) {
@@ -199,6 +213,14 @@ section.container-guide-section {
         width: auto;        
     }
 
+    .links li:hover {
+    background-color: #fff;
+    }
+
+    .links a:hover {
+        color: #090979;
+    }
+
     .links a {
         border: none;
     }
@@ -208,12 +230,16 @@ section.container-guide-section {
     }
 
     .galery-section {
-        display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
     #galery-image-9 {
         display: none;
+    }
+
+    .galery-section img:hover {
+        transform: none;
+        box-shadow: none;
     }
 
     div.guide-section {
@@ -228,6 +254,14 @@ section.container-guide-section {
         width: 100%;
         margin-top: 2rem;
     }
+
+    section.tours-section,
+    section.container-carosel,
+    section.container-galery-section,
+    section.container-guide-section,
+    section.container-map-section {
+    padding: 0 5%;
+    }
 }
 
     @media (max-width: 768px) {
@@ -235,5 +269,22 @@ section.container-guide-section {
     body.body {
         background-image: none;
         background-color: #ffffff;
+    }
+
+    .galery-section {
+        grid-template-columns: 1fr;
+    }
+
+     .galery-image-hide {
+        display: none;
+    }
+
+    section.container-map-section {
+        padding: 0 0%;
+    }
+
+    #map{
+        height: 500px;
+        border-radius: 0;
     }
 }

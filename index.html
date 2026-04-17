@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-gesture-handling/dist/leaflet-gesture-handling.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-gesture-handling"></script>
+    <script src="./js/map.js"></script>
 </head>
 
 <body class="body">
 
-    <main class="main container-fluid p-2">
+    <main id="main" class="main container-fluid p-2">
         <h1 class='main-text-color'>
         Seu Guia Completo no Rio de Janeiro
         <!--Explore o Rio de Janeiro com um Guia de Turismo Local-->
@@ -40,7 +40,7 @@
         </div>
     </main>
 
-    <section class="tours-section container-fluid ">
+    <section id="tours" class="tours-section container-fluid ">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -66,7 +66,7 @@
         </div>
     </section>
 
-    <section class="container-galery-section container-fluid ">
+    <section id="galeria" class="container-galery-section container-fluid ">
         <h2>Viva o Rio de Janeiro</h2>
         <p>Veja alguns dos lugares incríveis que você pode conhecer com nossos passeios guiados.</p>
         <div class="galery-section">
@@ -74,16 +74,16 @@
                 <img src="./images/Galery1.jpg" alt="Foto de um ponto turístico do Rio de Janeiro">
                 <img src="./images/Galery1.jpg" alt="Foto de um ponto turístico do Rio de Janeiro">
                 <img src="./images/Galery1.jpg" alt="Foto de um ponto turístico do Rio de Janeiro">
-                <img src="./images/Galery1.jpg" alt="Foto de um ponto turístico do Rio de Janeiro">
-                <img src="./images/Galery1.jpg" alt="Foto de um ponto turístico do Rio de Janeiro">
-                <img src="./images/Galery1.jpg" alt="Foto de um ponto turístico do Rio de Janeiro">
-                <img src="./images/Galery1.jpg" alt="Foto de um ponto turístico do Rio de Janeiro">
-                <img id="galery-image-9" src="./images/Galery1.jpg" alt="Foto de um ponto turístico do Rio de Janeiro">
+                <img class="galery-image-hide" src="./images/Galery1.jpg" alt="Foto de um ponto turístico do Rio de Janeiro">
+                <img class="galery-image-hide" src="./images/Galery1.jpg" alt="Foto de um ponto turístico do Rio de Janeiro">
+                <img class="galery-image-hide" src="./images/Galery1.jpg" alt="Foto de um ponto turístico do Rio de Janeiro">
+                <img class="galery-image-hide" src="./images/Galery1.jpg" alt="Foto de um ponto turístico do Rio de Janeiro">
+                <img id="galery-image-9" class="galery-image-hide" src="./images/Galery1.jpg" alt="Foto de um ponto turístico do Rio de Janeiro">
         </div>
     </section>
     
-    <section class="container-guide-section">
-        <div class='container-fluid guide-section'>
+    <section id="guia" class="container-guide-section">
+        <div class='guide-section'>
             <div class="guide-info">
                 <h2 class='main-text-color'>
                     Conheça seu guia
@@ -109,7 +109,12 @@
             </div>
         </div>
     </section>
-    
+
+    <section id="mapa" class="container-map-section container-fluid">
+        <h2>Pontos dos Passeios</h2>
+        <div id="map" class="container-fluid" style="display: block;">
+        </div>
+    </section>
 </body>
 
 </html>
