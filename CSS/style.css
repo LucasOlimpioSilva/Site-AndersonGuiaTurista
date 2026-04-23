@@ -13,7 +13,7 @@ body.body {
 }
 
 .BG-picture {
-    background-image: url("/images/Background01.png");
+    background-image: url("./images/Background01.png");
     background-size: cover;
     background-position: center 55%;
     background-repeat: no-repeat;
