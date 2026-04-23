@@ -12,17 +12,6 @@ body.body {
     font-family: "open sans", sans-serif;
 }
 
-.main {
-    min-height: 40rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-image: url("/images/Background01.png");
-    background-size: cover;
-    background-position: center 55%;
-    background-repeat: no-repeat;
-}
-
 .BG-picture {
     background-image: url("/images/Background01.png");
     background-size: cover;
