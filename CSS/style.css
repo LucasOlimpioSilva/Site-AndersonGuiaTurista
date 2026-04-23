@@ -13,7 +13,7 @@ body.body {
 }
 
 .BG-picture {
-    background-image: url("./images/Background01.png");
+    background-image: url("../images/Background01.png");
     background-size: cover;
     background-position: center 55%;
     background-repeat: no-repeat;
@@ -169,7 +169,7 @@ section.container-map-section {
 @media (max-width: 900px) {
 
     .BG-picture {
-        background-image: url("/images/BackgroundMobile.png");
+        background-image: url("../images/BackgroundMobile.png");
         height: 40rem;
     }
 }
@@ -177,7 +177,7 @@ section.container-map-section {
     @media (max-width: 768px) {
 
     .BG-picture {
-        background-image: url("/images/BackgroundMobile.png");
+        background-image: url("../images/BackgroundMobile.png");
         background-position: center 40%;
         height: 30rem;
     }

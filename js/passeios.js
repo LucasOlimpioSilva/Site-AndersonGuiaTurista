@@ -14,12 +14,12 @@ export const passeios = [
     {
         nome: "Pão de Açúcar",
         coords: [-22.948531, -43.156381],
-        imagem01: "images/passeios/paoDeAcucar/PaoDeAcucar01.jpg",
-        imagem02: "images/passeios/paoDeAcucar/PaoDeAcucar02.jpg",
-        imagem03: "images/passeios/paoDeAcucar/PaoDeAcucar03.jpg",
-        imagem04: "images/passeios/paoDeAcucar/PaoDeAcucar04.jpg",
-        imagem05: "images/passeios/paoDeAcucar/PaoDeAcucar05.jpg",
-        imagem06: "images/passeios/paoDeAcucar/PaoDeAcucar06.jpg",
+        imagem01: "../images/passeios/paoDeAcucar/PaoDeAcucar01.jpg",
+        imagem02: "../images/passeios/paoDeAcucar/PaoDeAcucar02.jpg",
+        imagem03: "../images/passeios/paoDeAcucar/PaoDeAcucar03.jpg",
+        imagem04: "../images/passeios/paoDeAcucar/PaoDeAcucar04.jpg",
+        imagem05: "../images/passeios/paoDeAcucar/PaoDeAcucar05.jpg",
+        imagem06: "../images/passeios/paoDeAcucar/PaoDeAcucar06.jpg",
         descricao: "Suba de bondinho e aproveite uma das vistas mais icônicas do Rio, perfeita para fotos ao pôr do sol.",
         preco: "R$220"
     },
