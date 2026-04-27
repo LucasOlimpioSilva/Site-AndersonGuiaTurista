@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     passeios.forEach(p => {
         L.marker(p.coords).addTo(map)
             .bindPopup(`
-                <div class="card text-center p-2" style="width: 18rem;">
+                <div class="card text-center p-2 map-card" style="width: 18rem; border: none;">
                     <div id="carouselExample" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -45,13 +45,13 @@ document.addEventListener("DOMContentLoaded", function () {
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body" >
                         <div class="card-background">
                             <h5 class="card-title">${p.nome}</h5>
                             <p class="card-text">${p.descricao}</p>
                             <p class="card-text"><strong">Preço a partir de: ${p.preco}</strong></p>
                         </div>
-                        <a href="#" class="btn btn-primary mt-2" style="color: #fff;">Agendar / Detalhes</a>
+                        <a href="#" class="map-btn btn btn-primary mt-2">Agendar / Detalhes</a>
                     </div>
                 </div>
             </div>

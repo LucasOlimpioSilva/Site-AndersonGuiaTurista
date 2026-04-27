@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anderson Turismo</title>
-    <link rel="stylesheet" href="./CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"rel="stylesheet">
@@ -17,12 +16,14 @@
     <script src="https://unpkg.com/leaflet-gesture-handling"></script>
     <script type="module" src="js/main.js"></script>
     <script type="module" src="js/map.js"></script>
+    <script type="module" src="js/formulario.js"></script>
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
 <body class="body">
 
     <nav class="container-fluid ">
-        <nav class="navbar navbar-expand-lg p-3" aria-label="Offcanvas navbar large">
+        <div id="navbar" class="navbar navbar-expand-lg p-3" aria-label="Offcanvas navbar large">
             <div class="container-fluid "> <a class="navbar-brand" href="#">Vanderson Turismo</a> <button
                     class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
                     aria-controls="offcanvasNavbar2" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
@@ -30,25 +31,29 @@
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2"
                     aria-labelledby="offcanvasNavbar2Label">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5> <button type="button"
+                        <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5> <button type="button"
                             class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-5 me-2">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 me-3">
                             <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Home</a> </li>
                             <li class="nav-item"> <a class="nav-link" href="#">Entre em contato</a> </li>
                             <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Passeios
                                 </a>
-                                <ul id="teste" class="dropdown-menu">                                    
+                                <ul id="navbar-links" class="dropdown-menu">                                    
                                 </ul>
                             </li>
                         </ul>
+                        <form id="search-form" class="d-flex encontre-passeios" role="search">
+                            <input id="search-input" class="form-control me-2" type="text" placeholder="Buscar passeios" aria-label="Search" />
+                            <button class="btn btn-outline-success" type="submit">Procurar</button>
+                        </form>
                     </div>
                 </div>
             </div>
-        </nav>
+        </div>
     </nav>
 
     <div class="BG-picture container-fluid p-2">
@@ -94,6 +99,32 @@
         <div id="map" class="container-fluid" style="display: block;">
         </div>
     </section>
+
+    <footer class="container-fluid">
+        <div class="d-flex flex-wrap justify-content-between align-items-center py-5 my-0 border-top">
+            <div class="col-md-4 d-flex align-items-center"> 
+                <a href="/" class="mb-3  mb-md-0 text-body-secondary text-decoration-none lh-1"></a> 
+                <span class="mb-3 mb-md-0 text-body-secondary">© 2026 Vanderson Turismo</span> 
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3">
+                    <a class="text-body-secondary" href="#" aria-label="Instagram">
+                        <img src="./images/svg/instagram-logo-facebook-2-svgrepo-com.svg" alt="Instagram logo" width="30" height="30">
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-body-secondary" href="#" aria-label="Instagram">
+                        <img src="./images/svg/facebook-boxed-svgrepo-com.svg" alt="Facebook logo" width="24" height="24">
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-body-secondary" href="#" aria-label="Instagram">
+                        <img src="./images/svg/whatsapp-svgrepo-com.svg" alt="WhatsApp logo" width="24" height="24">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>

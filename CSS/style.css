@@ -48,7 +48,17 @@ img{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px 30px;
+    gap: 70px 30px;
+}
+
+.card-passeio {
+    min-height: 650px;
+    /*
+    background-color: #8aacdf;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 15px;
+    */
 }
 
 .imagem-passeio img {
@@ -58,10 +68,40 @@ img{
 }
 
 .trips-section img:hover {
-    transform: scale(1.08);
+    transform: scale(1.03);
     transition: transform 0.3s ease;
     cursor: pointer;
     box-shadow: 0 8px 10px #4c75b3
+}
+
+.informacoes-passeio{
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.informacoes-passeio h3 {
+    text-align: center ;
+    margin: 10px 0 5px 0;
+}
+
+.informacoes-passeio p {
+    text-align: justify;
+    margin: 15px 0;
+}
+
+.informacoes-passeio .preco{
+    margin: 10px 0 0 0;
+}
+
+.btn-passeio {
+    /*
+    background-color: #ffffff;
+    color: #000000;
+    */
 }
 
 section.container-guide-section {
@@ -72,7 +112,8 @@ section.container-guide-section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0;    
+    padding: 0;
+    margin-top: 3rem;    
 }
 
 .guide-info {
@@ -110,11 +151,11 @@ section.container-guide-section {
 
 section.container-map-section {
     text-align: center;
-    margin: 3rem 0;
+    margin: 3rem 0 2rem 0;
 }
 
 section.container-map-section h2 {
-    font-size: 56px;
+    font-size: 3rem;
     margin-bottom: 2rem;
 }
 
@@ -122,6 +163,14 @@ section.container-map-section h2 {
     height: 500px;
     width: 100%;
     border-radius: 15px;
+}
+
+.map-card {
+    background-color: #ffffff;
+}
+
+a.map-btn {
+    color: #ffffff;
 }
 
 .card-price{
@@ -166,6 +215,25 @@ section.container-map-section {
     }
 }
 
+@media (max-width: 991px) {
+
+    .encontre-passeios{
+        margin-top: 1em;
+    }
+
+        body.body {
+        margin-top: 72px;
+    }
+
+    .informacoes-passeio h3 {
+        height: 100px;
+    }
+
+    .informacoes-passeio p {    
+        min-height: 150px;
+    }
+}
+
 @media (max-width: 900px) {
 
     .BG-picture {
@@ -174,7 +242,7 @@ section.container-map-section {
     }
 }
 
-    @media (max-width: 768px) {
+@media (max-width: 768px) {
 
     .BG-picture {
         background-image: url("../images/BackgroundMobile.png");
@@ -190,7 +258,7 @@ section.container-map-section {
         grid-template-columns: 1fr;
     }
 
-     .trips-image-hide {
+        .trips-image-hide {
         display: none;
     }
 
