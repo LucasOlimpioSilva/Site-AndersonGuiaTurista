@@ -22,11 +22,11 @@ body.body {
 }
 
 .navbar-brand, .nav-link{
-    color: #ffffff;
+    color: #fff;
 }
 
 .nav-link:focus{
-    color: #000;
+    color: #fff;
 }
 
 .nav-link:hover {
