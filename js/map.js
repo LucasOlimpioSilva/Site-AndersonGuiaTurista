@@ -2,20 +2,20 @@
 import { passeios } from "./passeios.js";
 
 document.addEventListener("DOMContentLoaded", function () {
-    const map = L.map('map', { dragging: true, scrollWheelZoom: false, gestureHandling: true, }).setView([-22.9368, -43.1929], 12); ;
+    const map = L.map('map', { dragging: true, scrollWheelZoom: false, gestureHandling: true, }).setView([-22.9268, -43.1629], 12); ;
 
     map.doubleClickZoom.disable();
     map.scrollWheelZoom.disable();
     
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { attribution: '&copy; OpenStreetMap & CartoDB'}).addTo(map);
 
-    
 
     passeios.forEach(p => {
         L.marker(p.coords).addTo(map)
+        
             .bindPopup(`
                 <div class="card text-center p-2 map-card" style="width: 18rem; border: none;">
-                    <div id="carouselExample" class="carousel slide">
+                    <div class="carousel slide" >
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="${p.imagem01}" class="d-block w-100 map-image" style="height: 150px;" alt="...">
@@ -36,11 +36,11 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <img src="${p.imagem06}" class="d-block w-100 map-image" style="height: 150px;" alt="...">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target=".carousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target=".carousel" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
@@ -57,7 +57,30 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
         `);
     });
+
+    window.verNoMapa = function (lat, lng) {
+            map.flyTo([lat,lng], 15, {
+                animated: true,
+                duration: 0.8
+        });
+
+        setTimeout(() => {
+            map.panBy([0, -220]); // sobe o mapa (ajuste fino aqui)
+        }, 801);
+
+        map.eachLayer(layer => {
+            if (layer.getLatLng &&
+                layer.getLatLng().lat === lat &&
+                layer.getLatLng().lng === lng) {
+
+                layer.openPopup();
+            }
+        });
+
+        
+        document.getElementById("map").scrollIntoView({
+            behavior: "smooth"
+        });
+    };
 });
-
-
 

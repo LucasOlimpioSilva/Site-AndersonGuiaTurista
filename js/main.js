@@ -12,7 +12,7 @@ export function renderPasseios(passeios) {
         const card = document.createElement('div');
 
         card.innerHTML = `
-            <div class="card-passeio">
+            <div id="${p.id}" class="card-passeio">
                 <div class="imagem-passeio">
                     <img src="${p.imagem01}" alt="Foto de um ponto turístico do Rio de Janeiro">
                 </div>
@@ -20,7 +20,12 @@ export function renderPasseios(passeios) {
                     <h3>${p.nome}</h3>
                     <p>${p.descricao}</p>
                     <div class="preco"><strong>Preço a partir de: ${p.preco}</strong></div>
-                    <a href="#" class="btn-passeio btn btn-primary">Agendar / Detalhes</a>
+                    <div class="card-btns">
+                        <button onclick="verNoMapa(${p.coords[0]},${p.coords[1]})" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver no mapa" class="map-location">
+                            <img src="./images/svg/map-location-pin-svgrepo-com.svg" alt="Ver no mapa" >
+                        </button>
+                        <a target="_blank" href="https://wa.me/5521981943187" class="btn-passeio btn btn-primary">Agendar/Detalhes</a>
+                    </div>
                 </div>
             </div>
         `;
@@ -37,24 +42,12 @@ export function renderListaPasseios (passeios) {
 
         const link = document.createElement('li');
 
-        link.innerHTML = `<a class="dropdown-item" href="#">${p.nome}</a>`;
+        link.innerHTML = `<a class="dropdown-item" href="#${p.id}">${p.nome}</a>`;
 
         linkspasseios.appendChild(link);
     });
 }
 
-
-function ajustarLayout() {
-    if (window.innerWidth <= 991) {
-        navbar.classList.add("fixed-top", "bg-body-tertiary");
-    } else {
-        navbar.classList.remove("fixed-top", "bg-body-tertiary");
-    }
-}
-
-
-window.addEventListener("load", ajustarLayout);
-window.addEventListener("resize", ajustarLayout);
 renderPasseios(passeios);
 renderListaPasseios(passeios);
 

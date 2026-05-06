@@ -1,6 +1,7 @@
 export const passeios = [
     {
         nome: "Cristo Redentor",
+        id: "cristoRedentor",
         coords: [-22.951916, -43.210487],
         imagem01: "images/passeios/cristoRedentor/CristoRedentor01.jpg",
         imagem02: "images/passeios/cristoRedentor/CristoRedentor02.jpg",
@@ -13,6 +14,7 @@ export const passeios = [
     },
     {
         nome: "Pão de Açúcar",
+        id: "paoDeAcucar",
         coords: [-22.948531, -43.156381],
         imagem01: "images/passeios/paoDeAcucar/paoDeAcucar01.jpg",
         imagem02: "images/passeios/paoDeAcucar/paoDeAcucar02.jpg",
@@ -25,6 +27,7 @@ export const passeios = [
     },
     {
         nome: "Praia de Copacabana",
+        id: "copacabana",
         coords: [-22.971964, -43.182543],
         imagem01: "images/passeios/cristoRedentor/CristoRedentor01.jpg",
         imagem02: "images/passeios/copacabana/Copa02.jpg",
@@ -37,6 +40,7 @@ export const passeios = [
     },
     {
         nome: "Praia de Ipanema",
+        id: "ipanema",
         coords: [-22.983956, -43.209587],
         imagem01: "images/passeios/cristoRedentor/CristoRedentor01.jpg",
         imagem02: "images/passeios/ipanema/Ipanema02.jpg",
@@ -49,6 +53,7 @@ export const passeios = [
     },
     {
         nome: "Escadaria Selarón",
+        id: "selaron",
         coords: [-22.915235, -43.179221],
         imagem01: "images/passeios/cristoRedentor/CristoRedentor01.jpg",
         imagem02: "images/passeios/selaron/Selaron02.jpg",
@@ -61,6 +66,7 @@ export const passeios = [
     },
     {
         nome: "Arcos da Lapa",
+        id: "lapa",
         coords: [-22.913708, -43.180409],
         imagem01: "images/passeios/cristoRedentor/CristoRedentor01.jpg",
         imagem02: "images/passeios/lapa/Lapa02.jpg",
@@ -73,6 +79,7 @@ export const passeios = [
     },
     {
         nome: "Parque Lage",
+        id: "parqueLage",
         coords: [-22.960762, -43.215937],
         imagem01: "images/passeios/cristoRedentor/CristoRedentor01.jpg",
         imagem02: "images/passeios/parquelage/Lage02.jpg",
@@ -85,6 +92,7 @@ export const passeios = [
     },
     {
         nome: "Mirante Dona Marta",
+        id: "donaMarta",
         coords: [-22.945814, -43.197566],
         imagem01: "images/passeios/cristoRedentor/CristoRedentor01.jpg",
         imagem02: "images/passeios/mirante/Mirante02.jpg",
@@ -97,6 +105,7 @@ export const passeios = [
     },
     {
         nome: "Outro",
+        id: "outro",
         coords: [-22.945814, -43.197566],
         imagem01: "images/passeios/cristoRedentor/CristoRedentor01.jpg",
         imagem02: "images/passeios/mirante/Mirante02.jpg",
