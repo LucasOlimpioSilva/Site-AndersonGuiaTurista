@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anderson Turismo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-gesture-handling/dist/leaflet-gesture-handling.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-gesture-handling"></script>
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/map.js"></script>
+    <script type="module" src="js/formulario.js"></script>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body class="body">
+
+    <nav class="container-fluid fixed-top bg-body-tertiary p-0">
+        <div id="navbar" class="navbar  navbar-expand-lg p-3" aria-label="Offcanvas navbar large" data-bs-theme="dark">
+            <div class="container-fluid "> <a class="navbar-brand" href="./index.html">Anderson Turismo</a> <button
+                    class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+                    aria-controls="offcanvasNavbar2" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2"
+                    aria-labelledby="offcanvasNavbar2Label">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5> <button type="button"
+                            class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 me-3">
+                            <li class="nav-item"> <a class="ativo nav-link" aria-current="page" href="./index.html">Home</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="https://wa.me/5521981943187" target="_blank">Entre em contato</a> </li>
+                            <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Passeios
+                                </a>
+                                <ul id="navbar-links" class="dropdown-menu">                                    
+                                </ul>
+                            </li>
+                        </ul>
+                        <form id="search-form" class="d-flex encontre-passeios" role="search">
+                            <input id="search-input" class="form-control me-2" type="text" placeholder="Buscar passeios" aria-label="Search" />
+                            <button class="btn btn-outline-success" type="submit">Procurar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="BG-picture container-fluid p-2">
+    </div>
+
+    <main class="container-trips-section container-fluid ">
+            <h1>Viva o Rio de Janeiro</h1>
+            <h2 class="subtitulo">Veja alguns dos lugares incríveis que você pode conhecer com nossos passeios guiados.</h2>
+            <div id="passeios" class="trips-section">
+            </div>
+    </main>
+    
+    <section id="guia" class="container-guide-section">
+        <div class='guide-section'>
+            <div class="guide-info">
+                <h2 class='main-text-color'>
+                    Conheça seu guia
+                </h2>
+                    <div class="guide-info-text">
+                    <p>
+                        Com mais de 10 anos de experiência, <strong>Anderson</strong> é um guia de turismo apaixonado pelo Rio de Janeiro.
+                        Ele conhece cada canto da cidade e está sempre pronto para mostrar aos visitantes os melhores pontos
+                        turísticos, além de oferecer dicas exclusivas para uma experiência inesquecível.
+                    </p>
+                    <p>
+                        Sua paixão pelo Rio de Janeiro e seu conhecimento profundo sobre a cidade tornam cada passeio uma
+                        experiência única e memorável.
+                    </p>
+                    <p>
+                        Siga @AndersonTurismo para ficar por dentro de todas as novidades e dicas sobre o Rio de Janeiro!
+                    </p>
+                    <div class="guide-socials">
+                        <a target="_blank" href="https://www.instagram.com/anderson.guiarj/"><img src="./images/svg/instagram-logo-facebook-2-svgrepo-com.svg" alt="Instagram logo" width="26"> Instagram</a>
+                        <a target="_blank" href="https://wa.me/5521981943187"><img src="./images/svg/whatsapp-svgrepo-com.svg" alt="Whatsapp logo" width="26"> Whatsapp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="guide-image">
+                <img src="./images/Anderson.webp" alt="Foto do guia de turismo local">
+            </div>
+        </div>
+    </section>
+
+    <section id="mapa" class="container-map-section container-fluid">
+        <h2>Mapa dos Passeios</h2>
+        <div id="map" class="container-fluid" style="display: block;">
+        </div>
+    </section>
+
+    <footer class="container-fluid">
+        <div class="d-flex flex-wrap px-3 justify-content-between align-items-center py-5 my-0 border-top">
+            <div class="col-md-4 d-flex align-items-center"> 
+                <a href="/" class="mb-3  mb-md-0 text-body-secondary text-decoration-none lh-1"></a> 
+                <span class="mb-3 mb-md-0 text-body-secondary">© 2026 Anderson Turismo</span> 
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3">
+                    <a class="text-body-secondary" target="_blank" href="https://www.instagram.com/anderson.guiarj/" aria-label="Instagram">
+                        <img src="./images/svg/instagram-logo-facebook-2-svgrepo-com.svg" alt="Instagram logo" width="30" height="30">
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-body-secondary" target="_blank" href="https://www.facebook.com/andersonTurismorj/" aria-label="Facebook">
+                        <img src="./images/svg/facebook-boxed-svgrepo-com.svg" alt="Facebook logo" width="24" height="24">
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-body-secondary" target="_blank" href="https://wa.me/5521981943187" aria-label="WhatsApp">
+                        <img src="./images/svg/whatsapp-svgrepo-com.svg" alt="WhatsApp logo" width="24" height="24">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
