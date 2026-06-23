@@ -104,9 +104,6 @@ export const passeios = [
         imagem01: "images/passeios/mirante/Mirante01.webp",
         imagem02: "images/passeios/mirante/Mirante02.webp",
         imagem03: "images/passeios/mirante/Mirante03.webp",
-        imagem04: "images/passeios/mirante/Mirante04.webp",
-        imagem05: "images/passeios/mirante/Mirante05.webp",
-        imagem06: "images/passeios/mirante/Mirante06.webp",
         descricao: "Uma das melhores vistas panorâmicas do Rio, ideal para ver o nascer ou pôr do sol.",
         alt: "Foto do Mirante Dona Marta",
         preco: "R$150"
