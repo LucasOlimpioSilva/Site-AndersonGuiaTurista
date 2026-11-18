@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     map.doubleClickZoom.disable();
     map.scrollWheelZoom.disable();
     
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { attribution: '&copy; OpenStreetMap & CartoDB'}).addTo(map);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?key=cb1_5bvs_1_137510c6e9c58d8155f643d5', { attribution: '&copy; OpenStreetMap & CartoDB'}).addTo(map);
 
 
     passeios.forEach(p => {
